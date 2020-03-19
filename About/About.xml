@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<modMetaData>
+	<name>Grand Rivers Reborn</name>
+	<author>Meltup</author>
+    <supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+    </supportedVersions>
+	
+	<packageId>Meltup.GrandRivers.Reborn</packageId>
+	
+	<description>Grand Rivers Reborn: Expanding the might of Rimword's waterways once again.
+	
+Original idea by 101VaultBoy.</description>
+</modMetaData>
