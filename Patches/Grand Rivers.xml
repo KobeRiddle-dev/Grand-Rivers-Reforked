@@ -30,6 +30,9 @@
 					<widthOnMap>15</widthOnMap>
 				</value>
 			</li>
+
+			<!-- TODO: Add a patch to make River branch into Small River -->
+
 		</operations>
 	</Operation>
 	<Operation Class="PatchOperationSequence">
