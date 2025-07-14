@@ -1,49 +1,50 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-<!--Test Grand Rivers then Modify as Needed-->
+	<!--Test Grand Rivers then Modify as
+	Needed-->
 	<Operation Class="PatchOperationSequence">
-	<success>Always</success>
+		<success>Always</success>
 		<operations>
-		<li Class="PatchOperationTest">
-			<xpath>Defs/RiverDef[defName = "LargeRiver" and widthOnMap &lt;= 23]</xpath>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RiverDef[defName = "LargeRiver" and widthOnMap &lt;= 23]</xpath>
 				<success>Normal</success>
-		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>Defs/RiverDef[defName = "LargeRiver"]/widthOnMap</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RiverDef[defName = "LargeRiver"]/widthOnMap</xpath>
 				<value>
 					<widthOnMap>23</widthOnMap>
 				</value>
-		</li>
+			</li>
 		</operations>
 	</Operation>
 	<Operation Class="PatchOperationSequence">
-	<success>Always</success>
+		<success>Always</success>
 		<operations>
-		<li Class="PatchOperationTest">
-			<xpath>Defs/RiverDef[defName = "River" and widthOnMap &lt;= 15]</xpath>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RiverDef[defName = "River" and widthOnMap &lt;= 15]</xpath>
 				<success>Normal</success>
 			</li>
-		<li Class="PatchOperationReplace">
-			<xpath>Defs/RiverDef[defName = "River"]/widthOnMap</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RiverDef[defName = "River"]/widthOnMap</xpath>
 				<value>
 					<widthOnMap>15</widthOnMap>
 				</value>
-		</li>
+			</li>
 		</operations>
 	</Operation>
 	<Operation Class="PatchOperationSequence">
-	<success>Always</success>
+		<success>Always</success>
 		<operations>
-		<li Class="PatchOperationTest">
-			<xpath>Defs/RiverDef[defName = "Creek" and widthOnMap &lt;= 7]</xpath>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RiverDef[defName = "Creek" and widthOnMap &lt;= 7]</xpath>
 				<success>Normal</success>
 			</li>
-		<li Class="PatchOperationReplace">
-			<xpath>Defs/RiverDef[defName = "Creek"]/widthOnMap</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RiverDef[defName = "Creek"]/widthOnMap</xpath>
 				<value>
 					<widthOnMap>7</widthOnMap>
 				</value>
-		</li>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
