@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RiverDef>
+        <defName>SmallRiver</defName>
+        <label>small river</label>
+        <spawnFlowThreshold>50000</spawnFlowThreshold>
+        <spawnChance>0.2</spawnChance>
+        <degradeThreshold>30000</degradeThreshold>
+        <degradeChild>Creek</degradeChild>
+        <branches>
+            <minFlow>30000</minFlow>
+            <child>Creek</child>
+            <chance>0.2</chance>
+        </branches>
+        <widthOnWorld>0.3</widthOnWorld>
+        <widthOnMap>7</widthOnMap>
+        <debugOpacity>0.1</debugOpacity>
+    </RiverDef>
+</Defs>
