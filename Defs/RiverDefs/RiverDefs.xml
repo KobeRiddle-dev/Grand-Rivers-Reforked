@@ -9,13 +9,13 @@
         <degradeChild>Creek</degradeChild>
         <branches>
             <li>
-                <minFlow>30000</minFlow>
+                <minFlow>20000</minFlow>
                 <child>Creek</child>
                 <chance>0.2</chance>
             </li>
         </branches>
         <widthOnWorld>0.3</widthOnWorld>
-        <widthOnMap>8</widthOnMap>
+        <widthOnMap>7</widthOnMap>
         <debugOpacity>0.1</debugOpacity>
     </RiverDef>
 </Defs>
