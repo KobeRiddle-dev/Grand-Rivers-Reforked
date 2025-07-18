@@ -12,7 +12,7 @@ Original idea by 101VaultBoy. Grand Rivers Reborn by Meltup
 
 | River Tier         | Vanilla | Grand Rivers Reborn | Grand Rivers Reforked |
 | ------------------ | ------- | ------------------- | --------------------- |
-| Huge River         | 30      | 30                  | 35                    |
+| Huge River         | 30      | 30                  | 36                    |
 | Large River        | 14      | 23                  | 23                    |
 | River              | 6       | 15                  | 15                    |
 | Small River (new!) | N/A     | 7                   | 7                     |
