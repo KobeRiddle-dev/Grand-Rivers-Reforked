@@ -15,7 +15,7 @@
             </li>
         </branches>
         <widthOnWorld>0.3</widthOnWorld>
-        <widthOnMap>7</widthOnMap>
+        <widthOnMap>8</widthOnMap>
         <debugOpacity>0.1</debugOpacity>
     </RiverDef>
 </Defs>

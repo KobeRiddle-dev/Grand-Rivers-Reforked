@@ -31,8 +31,8 @@
 		</operations>
 	</Operation>
 
-	<Operation Class="PathOperationReplace">
-		<xpath>Defs/RiverDef[defName = "River"/branches</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RiverDef[defName = "River"]/branches</xpath>
 		<value>
 			<branches>
 				<li>
@@ -41,6 +41,13 @@
 					<chance>0.3</chance>
 				</li>
 			</branches>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RiverDef[defName = "Creek"]/widthOnMap</xpath>
+		<value>
+			<widthOnMap>3</widthOnMap>
 		</value>
 	</Operation>
 
