@@ -54,7 +54,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/RiverDef[defName = "HugeRiver"]/widthOnMap</xpath>
 		<value>
-			<widthOnMap>3</widthOnMap>
+			<widthOnMap>36</widthOnMap>
 		</value>
 	</Operation>
 
