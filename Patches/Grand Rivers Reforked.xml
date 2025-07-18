@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Test Grand Rivers then Modify as
+	Needed-->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RiverDef[defName = "LargeRiver" and widthOnMap &lt;= 23]</xpath>
+				<success>Normal</success>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RiverDef[defName = "LargeRiver"]/widthOnMap</xpath>
+				<value>
+					<widthOnMap>23</widthOnMap>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RiverDef[defName = "River" and widthOnMap &lt;= 15]</xpath>
+				<success>Normal</success>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RiverDef[defName = "River"]/widthOnMap</xpath>
+				<value>
+					<widthOnMap>15</widthOnMap>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RiverDef[defName = "River"]/branches</xpath>
+		<value>
+			<branches>
+				<li>
+					<minFlow>50000</minFlow>
+					<child>SmallRiver</child>
+					<chance>0.3</chance>
+				</li>
+			</branches>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RiverDef[defName = "Creek"]/widthOnMap</xpath>
+		<value>
+			<widthOnMap>3</widthOnMap>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RiverDef[defName = "HugeRiver"]/widthOnMap</xpath>
+		<value>
+			<widthOnMap>36</widthOnMap>
+		</value>
+	</Operation>
+
+</Patch>
