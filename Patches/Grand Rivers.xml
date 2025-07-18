@@ -3,7 +3,6 @@
 	<!--Test Grand Rivers then Modify as
 	Needed-->
 	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
 				<xpath>Defs/RiverDef[defName = "LargeRiver" and widthOnMap &lt;= 23]</xpath>
@@ -18,7 +17,6 @@
 		</operations>
 	</Operation>
 	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
 				<xpath>Defs/RiverDef[defName = "River" and widthOnMap &lt;= 15]</xpath>
@@ -30,24 +28,20 @@
 					<widthOnMap>15</widthOnMap>
 				</value>
 			</li>
-
-			<!-- TODO: Add a patch to make River branch into Small River -->
-
 		</operations>
 	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/RiverDef[defName = "Creek" and widthOnMap &lt;= 7]</xpath>
-				<success>Normal</success>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RiverDef[defName = "Creek"]/widthOnMap</xpath>
-				<value>
-					<widthOnMap>7</widthOnMap>
-				</value>
-			</li>
-		</operations>
+
+	<Operation Class="PathOperationReplace">
+		<xpath>Defs/RiverDef[defName = "River"/branches</xpath>
+		<value>
+			<branches>
+				<li>
+					<minFlow>50000</minFlow>
+					<child>SmallRiver</child>
+					<chance>0.3</chance>
+				</li>
+			</branches>
+		</value>
 	</Operation>
+
 </Patch>
